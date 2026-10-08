@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="fr">
+<meta charset="utf-8">
+<link rel="icon" href="icons/icon-32.png">
+<link rel="stylesheet" href="dashboard.css">
+<body class="mini">
+  <h1><img class="logo" src="icons/icon-96.png" alt=""> Gambitracker</h1>
+  <div id="coach" class="status"></div>
+  <div class="settings">
+    <label id="coachRow"><b>Coach en direct</b> (tables contre les bots) <input id="sCoach" type="checkbox"></label>
+    <label>Équité seulement (panneau compact) <input id="sCompact" type="checkbox"></label>
+    <details id="sShow"><summary>Que montrer dans le coach</summary><div class="show-list"></div></details>
+    <label title="Toutes les tables, y compris contre des humains : rien pendant la main, le récap s'affiche quand elle est finie">Récap après chaque main (tous les modes) <input id="sRecap" type="checkbox"></label>
+    <label title="Tu peux aussi glisser le panneau par son titre sur la table">Position du panneau <select id="sSide"><option value="right">à droite</option><option value="left">à gauche</option></select></label>
+  </div>
+  <div id="today" class="tiles"></div>
+  <table id="last"></table>
+  <div class="btns">
+    <button id="dash" class="primary">📊 Ouvrir l'analyse complète</button>
+  </div>
+
+  <div class="btns">
+    <button id="clr">Tout effacer</button>
+  </div>
+  <script src="config.js"></script>
+  <script src="engine.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
